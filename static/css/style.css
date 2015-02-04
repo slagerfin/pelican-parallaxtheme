@@ -65,13 +65,9 @@ nav ul {
 	margin-right: 2em;
 }
 
-nav > * {
-	color: rgba(1, 1, 1, 1);
-}
-
 main {
 	font-family: 'Roboto Slab', serif;
-	min-height: 100vh;
+	min-height: 20vh;
 	max-width: 900px;
 	margin: 0 auto;
 	font-size: 22px;
