@@ -3,6 +3,10 @@ body {
 	background-color: rgba(240, 240, 240, 1);
 }
 
+.wrapper {
+	margin: 0 auto;
+	display: table;
+}
 
 a {
 	color: inherit;
@@ -51,12 +55,13 @@ nav {
 }
 
 /* ul-title */
-ul:before{
+ul:before {
     content:attr(aria-label);
     font-size:120%;
     font-weight:bold;
     margin-left:-15px;
 }
+
 
 nav ul {
 	vertical-align: top;
@@ -65,11 +70,24 @@ nav ul {
 	margin-right: 2em;
 }
 
+nav:nth-child(3n+3) ul:after {
+	content:"\A";
+	white-space:pre;
+}
+
 main {
 	font-family: 'Roboto Slab', serif;
 	min-height: 20vh;
 	max-width: 900px;
 	margin: 0 auto;
 	font-size: 22px;
+}
+
+@media screen and (min-width: 1917px) {
+    header {
+      background-size: cover;
+      background-position: 0px -350px;
+
+    }
 }
 
