@@ -1,20 +1,21 @@
 body {
-	margin: 0;
-	background-color: rgba(240, 240, 240, 1);
+  margin: 0;
+  background-color: rgba(240, 240, 240, 1);
+
 }
 
 .wrapper {
-	margin: 0 auto;
-	display: table;
+  margin: 0 auto;
+  display: table;
 }
 
 a {
-	color: inherit;
+  color: inherit;
 }
 
 h1 {
   color: rgba(0, 0, 0, .5);
-  font-size: 42px;	
+  font-size: 42px;  
 }
 
 h2 {
@@ -28,30 +29,31 @@ h3 {
 
 }
 
-header {
-	height: 350px;
-	background-size: auto 350px;
-  	background-image: url('/theme/img/header.jpg');
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
+.banner {
+  height: 350px;
+  background-size: auto 350px;
+  background-image: url('/theme/img/banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #aaa;
 }
 
-header h1 {
-	margin-top: 0px;
-	color: rgba(255, 255, 255, .3);
-	font-size: 48px;
-	line-height: 550px;
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	text-shadow: 0 0 10px rgba(0, 0, 0, .4);
+.banner h1 {
+  margin-top: 0px;
+  color: rgba(255, 255, 255, .3);
+  font-size: 48px;
+  line-height: 550px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .4);
 }
 
 nav {
-	background-color: rgba(1, 1, 1, .09);
-	width: 100%;
-	text-align: center;
-	border-bottom: 1px black solid;
+  background-color: rgba(1, 1, 1, .09);
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px black solid;
 }
 
 /* ul-title */
@@ -64,27 +66,22 @@ ul:before {
 
 
 nav ul {
-	vertical-align: top;
-	display: inline-block;
-	text-align: left;
-	margin-right: 2em;
-}
-
-nav:nth-child(3n+3) ul:after {
-	content:"\A";
-	white-space:pre;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  margin-right: 2em;
 }
 
 main {
-	font-family: 'Roboto Slab', serif;
-	min-height: 20vh;
-	max-width: 900px;
-	margin: 0 auto;
-	font-size: 22px;
+  font-family: 'Roboto Slab', serif;
+  min-height: 20vh;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 22px;
 }
 
 @media screen and (min-width: 1917px) {
-    header {
+    banner {
       background-size: cover;
       background-position: 0px -350px;
 
