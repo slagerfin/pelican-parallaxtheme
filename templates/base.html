@@ -33,12 +33,15 @@
 </head>
 
 <body id="index" class="home">
+    <div class="wrapper">
         <div class="banner">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-        </div><!-- /#banner -->
-        
+            <h1>
+                <a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a>
+            </h1>
+        </div>
+        <!-- /#banner -->
+
         <nav id="menu">
-            <div class="wrapper">
             <ul>
             {% for title, link in MENUITEMS %}
                 <li><a href="{{ link }}">{{ title }}</a></li>
@@ -71,19 +74,23 @@
                 {% endfor %}
             {% endif %}
             </ul>
-            </div>
-        </nav><!-- /#menu -->
+        </nav>
+        <!-- /#menu -->
 
         <main>        
             {% block content %}
             {% endblock %}
         </main>
+        <!--/main -->
 
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
                 Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
                 which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+                </address>
+                <!-- /#about -->
+        </footer>
+        <!-- /#contentinfo -->
+    </div>
 </body>
 </html>

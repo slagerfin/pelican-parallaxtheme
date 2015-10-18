@@ -1,12 +1,13 @@
-body {
-  margin: 0;
+html,body {
+  margin:0;
+  /* padding:0; */
+  height:100%;
   background-color: rgba(240, 240, 240, 1);
-
 }
 
 .wrapper {
-  margin: 0 auto;
-  display: table;
+    min-height:100%;
+    position:relative;
 }
 
 a {
@@ -26,7 +27,6 @@ h2 {
 h3 {
   color: rgba(0, 0, 0, .6);
   font-size: 24px;
-
 }
 
 .banner {
@@ -64,7 +64,6 @@ ul:before {
     margin-left:-15px;
 }
 
-
 nav ul {
   vertical-align: top;
   display: inline-block;
@@ -78,6 +77,13 @@ main {
   max-width: 900px;
   margin: 0 auto;
   font-size: 22px;
+}
+
+footer {
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 
 @media screen and (min-width: 1917px) {
